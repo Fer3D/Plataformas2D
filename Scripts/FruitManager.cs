@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class FruitManager : MonoBehaviour
 {
     public Text levelCleared;
+    public GameObject transition;
+
     private void Update()
     {
         AllFruitsCollected();
@@ -15,8 +17,8 @@ public class FruitManager : MonoBehaviour
     {
         if (transform.childCount == 0)
         {
-            Debug.Log("All fruits collected!");
             levelCleared.gameObject.SetActive(true);
+            transition.SetActive(true);
             Invoke("ChangeScene", 1);
         }
     }

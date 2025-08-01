@@ -10,7 +10,6 @@ public class CheckPoint : MonoBehaviour
         {
             collision.GetComponent<PlayerRespawn>().ReachedCheckpoint(transform.position.x, transform.position.y);
             GetComponent<Animator>().enabled = true;
-            Debug.Log("Checkpoint reached!");
         }
     }
 }
