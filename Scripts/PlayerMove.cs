@@ -54,7 +54,7 @@ public class PlayerMove : MonoBehaviour
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
-        else if (CheckGround.isGrounded = true)
+        else if (CheckGround.isGrounded == true)
         {
             animator.SetBool("Jump", false);
         }
