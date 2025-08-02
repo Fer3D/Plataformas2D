@@ -196,7 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 2
-  jumpSpeed: 3.5
+  jumpSpeed: 3
+  doubleJumpSpeed: 2.5
   betterJump: 1
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d3ce92cb2cf2f42a3b5fedbbe09feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!1 &4780608989575068031
 GameObject:
   m_ObjectHideFlags: 0

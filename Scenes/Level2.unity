@@ -7419,6 +7419,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 647283759303012609, guid: 581f04311eb5a6c479a6fa6d82226c22, type: 3}
+      propertyPath: jumpSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4168972487699497171, guid: 581f04311eb5a6c479a6fa6d82226c22, type: 3}
       propertyPath: m_Name
       value: Frog
