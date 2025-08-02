@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d3ce92cb2cf2f42a3b5fedbbe09feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 5084902100063351314}
 --- !u!114 &4058641535472142099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389d8205c0188144dae31d7405fcd5b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSelected: 0
+  enableSelectCharacter: 0
+  playerSelected: 3
   animator: {fileID: 5084902100063351314}
   spriteRenderer: {fileID: 5426529521311892603}
   playersController:
