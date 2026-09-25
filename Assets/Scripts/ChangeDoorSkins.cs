@@ -12,20 +12,22 @@ public class ChangeDoorSkins : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            skinsPanel.gameObject.SetActive(true);
-            inDoor = true;
-        }
+        if (!collision.CompareTag("Player"))
+            return;
+
+        if (skinsPanel != null)
+            skinsPanel.SetActive(true);
+        inDoor = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
+        if (!collision.CompareTag("Player"))
+            return;
+
+        if (skinsPanel != null)
             skinsPanel.SetActive(false);
-            inDoor = false;
-        }
+        inDoor = false;
     }
 
     public void SetPlayerFrog()
@@ -54,7 +56,9 @@ public class ChangeDoorSkins : MonoBehaviour
 
     void ResetPlayerSkin()
     {
-        skinsPanel.gameObject.SetActive(false);
-        player.GetComponent<PlayerSelect>().ChangePlayerInMenu();
+        if (skinsPanel != null)
+            skinsPanel.SetActive(false);
+        if (player != null)
+            player.GetComponent<PlayerSelect>().ChangePlayerInMenu();
     }
 }
