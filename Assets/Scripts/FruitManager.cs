@@ -9,21 +9,34 @@ public class FruitManager : MonoBehaviour
     public Text levelCleared;
     public GameObject transition;
 
+    private bool levelFinished;
+
     private void Update()
     {
         AllFruitsCollected();
     }
+
     public void AllFruitsCollected()
     {
-        if (transform.childCount == 0)
-        {
+        if (levelFinished || transform.childCount > 0)
+            return;
+
+        levelFinished = true;
+
+        if (levelCleared != null)
             levelCleared.gameObject.SetActive(true);
+        if (transition != null)
             transition.SetActive(true);
-            Invoke("ChangeScene", 1);
-        }
+
+        Invoke(nameof(ChangeScene), 1);
     }
+
     void ChangeScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int next = SceneManager.GetActiveScene().buildIndex + 1;
+        if (next >= SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadScene(0);
+        else
+            SceneManager.LoadScene(next);
     }
 }
