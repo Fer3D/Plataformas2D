@@ -1,3 +1,5 @@
+<img width="870" height="492" alt="Unity_vPKLDYFUZj" src="https://github.com/user-attachments/assets/e3839e3a-da8c-44d2-813e-be9df3fb1aeb" />
+
 # Plataformas2D
 
 Plataformer 2D en pixel art. Eliges un personaje, saltas por los niveles, recoges todas las frutas y evitas pinchos y trampas hasta llegar al final.
@@ -49,3 +51,5 @@ Play desde el editor o haz un build normal de Unity.
 ## Notas
 
 Proyecto personal / portfolio. Es un plataformer clásico de recoger frutas y saltar: sin historia larga, sin inventario, sin combate. Tres niveles, doble salto, checkpoints y ya.
+
+<img width="1029" height="586" alt="Unity_4ZGT2BoJY1" src="https://github.com/user-attachments/assets/ea84254c-988b-4c9a-a932-102b976805a0" />
