@@ -4,7 +4,7 @@
 
 Plataformer 2D en pixel art. Eliges un personaje, saltas por los niveles, recoges todas las frutas y evitas pinchos y trampas hasta llegar al final.
 
-Hecho en Unity 2022 LTS.
+Hecho en Unity 2022 LTS (Mi primer proyecto en Unity).
 
 ## Cómo se juega
 
